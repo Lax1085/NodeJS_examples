@@ -15,7 +15,7 @@ const pool = new Pool({
 })
 
 
-const getPlayers =  (pageCount)=>{
+const getTeams =  (pageCount)=>{
 		console.log('https://www.balldontlie.io/api/v1/teams?page='+pageCount);
 		request('https://www.balldontlie.io/api/v1/teams?page='+pageCount, { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }
@@ -52,5 +52,5 @@ const getPlayers =  (pageCount)=>{
 	})
 }
 
-getPlayers(0)
+getTeams(0)
 
