@@ -3,15 +3,6 @@ const hostname = 'localhost';
 const port = 3000;
 const ProgressBar = require('progress')
 
-//console.debug(process);
-
-//const args= process.argv.slice(2)
-//const args = require('minimist')(process.argv.slice(2))
-
-const array={1:"alex", 2:"test", 3:"car"};
-console.log('My %s has %d years', 'cat', 2)
-
-
 const request = require('request');
 
 const Pool = require('pg').Pool
@@ -63,57 +54,3 @@ const getPlayers =  (pageCount)=>{
 
 getPlayers(0)
 
-//const interval=setInterval(getPlayers(0),10000);
-
-
-/*
-
-const https = require('https')
-const options = {
-  hostname: 'www.balldontlie.io',
-  path: '/api/v1/players',
-  method: 'GET'
-}
-data=""
-const req = https.request(options, res => {
-  //console.log(`statusCode: ${res.statusCode}`)
-  let temp;
-  res.on('data', d => {
-	//process.stdout.write("!!!: "+d) 
-	temp.concat(temp,d);
-  })
-  //const test=JSON.parse(d);
-  console.debug(temp);
-  
-})
-
-req.on('error', error => {
-  console.error(error)
-})
-
-req.end()
-
-*/
-//console.debug(data);
-/*objects.forEach(record=>{
-
-	console.log('******START*********');
-	console.log(record);
-	console.log('******END*********');
-
-})*/
-
-
-
-/*const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  jsonOutput=JSON.stringify(array);
-  //console.debug(jsonOutput);
-  res.end(jsonOutput);
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-
-});*/
